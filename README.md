@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EM DESENVOLVIMENTO - fase 1/5
 
-## Getting Started
+# Descrição
+- Podcastr projeto criado na semana nlw 5 da rocket Seat.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# tecnologias utilizadas
+ - ReactJs, Next.Js, TypeScript, Css.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+  <a href="" target="_blank"><img src="https://i.ibb.co/h7Q7TqY/podcaster.jpg" alt="Home-custom" border="0"></a>
+</p>
+<h1>Demonstração:  <a href="" target="_blank">Ir para Podcastr</a></h1>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Scripts Disponíveis para rodar sua aplicação
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<strong> 1º </srtong>Instalação do projeto 
+- Clone o projeto através da url: 
+No diretório do projeto através do terminal, execute o comando abaixo para instalar as dependencias do next:
+- <strong> <code>yarn install</code></strong>
+- <strong> <code>yarn add typescript @types/react @types/react-dom @types/node -D</code></strong>
 
-## Learn More
+<strong> 2º </srtong>Rodar o projeto. 
+- No terminal dentro do diretório da aplicação, execute o comando:
+<strong> <code>yarn dev</code></strong>
 
-To learn more about Next.js, take a look at the following resources:
+<strong> 3º </srtong>Executa o aplicativo no modo de desenvolvimento.\
+- Acesse seu navegador com o endereço: (http://localhost:3000) .
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+A página será recarregada se você fizer edições. \
+Você também verá quaisquer erros de lint no console.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Licença Licença MIT
+<p align="center">
+  <a href="https://github.com/charles-mrt/podcastr/blob/main/README.md" target="_blank">Acesse para mais informações</a>
+</p>
