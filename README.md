@@ -21,7 +21,7 @@ No diretório do projeto através do terminal, execute:
 - <strong> 
 <code>
 
-# Installl the dependecies
+# Install the dependecies
 $ yarn
 
 # Run the JSON server
