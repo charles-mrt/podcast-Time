@@ -22,15 +22,14 @@ No diretório do projeto através do terminal, execute:
 <code>
 # Install the dependecies
 $ yarn
-
 # Run the JSON server
 $ yarn server
-
 # Start the project
 $ yarn dev
 </code>
 
-Executa o aplicativo no modo de desenvolvimento.\
+
+<strong> 2º </srtong>Executa o aplicativo no modo de desenvolvimento.\
 - Acesse seu navegador com o endereço: (http://localhost:3000) .
 
 
