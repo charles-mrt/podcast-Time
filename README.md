@@ -23,15 +23,14 @@ Follow the steps below
 ```bash
 # Install the dependencies
 $ yarn
-
 # Run the JSON server
 $ yarn server
-
 # Start the project
 $ yarn dev
 
 
-Executa o aplicativo no modo de desenvolvimento.\
+
+<strong> 2º </srtong>Executa o aplicativo no modo de desenvolvimento.\
 - Acesse seu navegador com o endereço: (http://localhost:3000) .
 ```
 
