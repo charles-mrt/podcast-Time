@@ -19,8 +19,9 @@
 - Clone o projeto através da url:https://github.com/charles-mrt/podcast-Time.git 
 No diretório do projeto através do terminal, execute:
 
-<code>
-# Install the dependecies
+Follow the steps below
+```bash
+# Install the dependencies
 $ yarn
 
 # Run the JSON server
@@ -28,11 +29,11 @@ $ yarn server
 
 # Start the project
 $ yarn dev
-</code>
+
 
 Executa o aplicativo no modo de desenvolvimento.\
 - Acesse seu navegador com o endereço: (http://localhost:3000) .
-
+```
 
 A página será recarregada se você fizer edições. \
 Você também verá quaisquer erros de lint no console.
