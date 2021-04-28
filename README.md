@@ -28,9 +28,7 @@ $ yarn server
 # Start the project
 $ yarn dev
 
-
-
-<strong> 2º </srtong>Executa o aplicativo no modo de desenvolvimento.\
+Executa o aplicativo no modo de desenvolvimento.\
 - Acesse seu navegador com o endereço: (http://localhost:3000) .
 ```
 
