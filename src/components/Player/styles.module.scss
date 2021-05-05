@@ -135,8 +135,8 @@
 }
 
 @media(max-width: 1370px) {   
+   
    .playerContainer  {
-      width: 18rem;
       padding-right: 2rem;       
       padding-left: 2rem;
        
@@ -165,8 +165,7 @@
  }
 
 @media(max-width: 800px) {
-   .playerContainer {    
-      width: 90%;
+   .playerContainer {          
       border-radius: 0 2rem 2rem 0;
       -webkit-box-shadow: 1px 4px 6px 1px rgba(0,0,0,0.75);    
    }
