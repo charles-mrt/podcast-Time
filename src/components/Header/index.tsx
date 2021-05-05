@@ -30,9 +30,28 @@ export function Header() {
          <span>{currentDate}</span>
 
          <div className={styles.themeColor}>
+
             <div className={colorTheme === 'dark' ? styles.darkActive : styles.lightActive}>
-               <span><FiMoon onClick={() => changeThemeColor('dark')}  title="ativa tema escuro"/></span>
-               <span><FiSun onClick={() => changeThemeColor('light')} title="ativa tema claro"/></span>
+
+               <span>
+                  <FiMoon
+                     onClick={() => changeThemeColor('dark')}
+                     title={colorTheme === 'dark'
+                        ? "tema escuro ativo"
+                        : "ativa tema escuro"
+                     }
+                  />
+               </span>
+
+               <span>
+                  <FiSun
+                     onClick={() => changeThemeColor('light')}
+                     title={colorTheme !== 'dark'
+                        ? "tema claro ativo"
+                        : "ativa tema claro"}
+                  />
+               </span>
+               
             </div>
          </div>
       </header >
