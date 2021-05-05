@@ -6,8 +6,10 @@ import { usePlayer } from '../../contexts/PlayerContext';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
+import { FiSliders } from 'react-icons/fi';
 import styles from './styles.module.scss';
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString';
+
 
 export function Player() {
 
@@ -22,6 +24,8 @@ export function Player() {
       isShuffLing,
       hasNext,
       hasPrevious,
+      slideButton,
+      activeSideBarSlideButton,
       toogleLoop,
       tooglePlay,
       toogleShuffle,
@@ -65,17 +69,27 @@ export function Player() {
          clearPlayerState();
       }
    }
-
+ 
    const episode = episodeList[currentEpisodeIndex];
 
    return (
-      <aside className="painel-control">
+      <aside className={slideButton ? "control-painel actived" : 'control-painel' }>
          <div className={styles.playerContainer}>
 
             <header>
                <img src="/playing.svg" alt="Tocando agora" />
                <strong>Tocando agora</strong>
             </header>
+
+            <div className={slideButton ? 'slide-button active' : 'slide-button'  }>
+               <button
+                  type="button"
+                  onClick={activeSideBarSlideButton}
+                  onTouchMove={activeSideBarSlideButton}
+               >
+                  <FiSliders />
+               </button>              
+            </div>
 
             {episode ? (
 
