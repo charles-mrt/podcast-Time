@@ -1,8 +1,9 @@
-.playerContainer {
+.playerContainer {           
+   position: relative;
    padding: 3rem 4rem;
-   width: 26.5rem;
+   width: 26.5rem;   
    height: 100vh;
-   
+
    background: var(--purple-500);
    color: var(--white);
 
@@ -93,11 +94,10 @@
 
 .buttons {
    display: flex;
-   align-items: center;
-   //justify-content: center;
+   align-items: center;   
    justify-content: space-between;
    margin-top: 2.5rem;
-  // gap:1.5rem;
+  
       
    button {
       background: transparent;
@@ -132,5 +132,43 @@
       }
 
    }
-   
 }
+
+@media(max-width: 1370px) {   
+   .playerContainer  {
+      width: 18rem;
+      padding-right: 2rem;       
+      padding-left: 2rem;
+       
+      .currentEpisode {
+         span {
+            font-size: 0.8rem;
+            line-height: 1rem;
+            margin: 1rem 0;
+         }
+      }
+      
+      .emptyPlayer {
+         width: auto;
+         height: auto;
+      }
+
+      strong {               
+         font-size: 90%;            
+      }
+
+      .buttons {
+         margin-top: 2rem;
+      }
+   }   
+
+ }
+
+@media(max-width: 800px) {
+   .playerContainer {    
+      width: 26.5rem;  
+      border-radius: 0 2rem 2rem 0;
+      -webkit-box-shadow: 1px 4px 6px 1px rgba(0,0,0,0.75);    
+   }
+}
+
