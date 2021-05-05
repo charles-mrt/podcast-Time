@@ -34,7 +34,7 @@ type EpisodeProps = {
 
 export default function Episode({ episode }: EpisodeProps) {
 
-   const { play } = usePlayer();
+   const { play, activeSideBarSlideButton } = usePlayer();
    return (
       <div className={styles.episode}>
          <Head>
@@ -42,7 +42,8 @@ export default function Episode({ episode }: EpisodeProps) {
          </Head>
          <div className={styles.thumbnailContainer}>
             <Link href="/">
-               <button type="button">
+               <button type="button"
+                  onClick={activeSideBarSlideButton}>
                   <img src="/arrow-left.svg" alt="Voltar" />
                </button>
             </Link>
@@ -54,7 +55,11 @@ export default function Episode({ episode }: EpisodeProps) {
                objectFit="cover"
             />
 
-            <button type="button" onClick={() => play(episode)}>
+            <button 
+               type="button" 
+               onClick={() => play(episode)}
+               onClickCapture={activeSideBarSlideButton}
+            >
                <img src="/play.svg" alt="Tocar episódio" />
             </button>
          </div>
