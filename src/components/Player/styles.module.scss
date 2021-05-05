@@ -1,7 +1,7 @@
 .playerContainer {           
    position: relative;
    padding: 3rem 4rem;
-   width: 26.5rem;   
+    
    height: 100vh;
 
    background: var(--purple-500);
@@ -133,9 +133,10 @@
 
    }
 }
-
+/*
 @media(max-width: 1370px) {   
    .playerContainer  {
+
       padding-right: 2rem;       
       padding-left: 2rem;
        
@@ -162,11 +163,15 @@
    }   
 
  }
-
+*/
 @media(max-width: 800px) {
    .playerContainer {          
       border-radius: 0 2rem 2rem 0;
       -webkit-box-shadow: 1px 4px 6px 1px rgba(0,0,0,0.75);    
+   
+      strong {               
+         font-size: 90%;            
+      }
    }
 }
 
