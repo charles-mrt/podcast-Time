@@ -125,6 +125,7 @@ button {
 
 /* Sidebar Control Play */
 .control-painel  {
+  width: 26.5rem;  
   position: relative;  
   transition: 0.3s;
 }
@@ -144,10 +145,11 @@ button {
       position: absolute;  
       left: -100%;     
       top: 7rem;
-      width: 100%;
+      
 
       &.actived  {            
          left: 0;  
+         width: 25rem;         
       }
       
       .slide-button {
@@ -171,8 +173,7 @@ button {
             transition: 0.5s;
          }
 
-         &.active {
-         
+         &.active {            
             button {
                color: var(--green-500);
                transform: rotate(180deg);               
@@ -183,6 +184,7 @@ button {
 }
 
 /* mobile screen */
+
 
 @media(max-width: 768px) {
    .control-painel {
@@ -208,8 +210,13 @@ button {
 }
 @media(max-width: 375px) {
    .control-painel {
-      left: -100%;
+      left: -100%;       
+   
+      &.actived {
+         width: 23rem; 
+      }
    }
+   
 }
 
 @media(max-width: 350px) {   
@@ -231,7 +238,10 @@ button {
 }
 @media(max-width: 320px) {   
    .control-painel  {              
-      left: -115%;           
+      left: -115%;      
+      &.actived {
+         width: 20rem; 
+      }     
    }
 }
 @media(max-width: 300px) {   
