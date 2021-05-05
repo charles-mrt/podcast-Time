@@ -135,9 +135,9 @@
 }
 
 @media(max-width: 1370px) {   
-   
    .playerContainer  {
-      padding: 0 2rem 6rem 2rem;
+      padding-right: 2rem;       
+      padding-left: 2rem;
        
       .currentEpisode {
          span {
