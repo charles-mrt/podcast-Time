@@ -18,6 +18,8 @@ type PlayerContextData = {
    isShuffLing: boolean;
    hasPrevious: boolean;
    hasNext: boolean;
+   slideButton: boolean;
+   activeSideBarSlideButton: () => void;
    play: (episode: Episode) => void;
    playList: (list: Episode[], index: number) => void;
    tooglePlay: () => void;
@@ -44,6 +46,14 @@ export function PlayerContextProvider({ children }: PlayerContextProviderProps) 
    const [isPlaying, setIsPlaying] = useState(false);
    const [isLooping, setIsLooping] = useState(false);
    const [isShuffLing, setIsShuffLing] = useState(false);
+
+   const [slideButton, setSlideButton] = useState(false);
+
+
+
+   function activeSideBarSlideButton () {
+      setSlideButton(!slideButton);
+   }
 
    function play(episode: Episode) {
       setEpisodeList([episode]);
@@ -108,6 +118,8 @@ export function PlayerContextProvider({ children }: PlayerContextProviderProps) 
             isShuffLing,
             hasPrevious,
             hasNext,
+            slideButton,
+            activeSideBarSlideButton,
             playList,
             play,
             tooglePlay,
