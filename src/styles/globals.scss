@@ -66,12 +66,13 @@ button {
 }
 
 
-/* --------- DARK MODE - TEST ------------*/
+/* --------- DARK MODE ------------*/
 
 .light-theme.actived {
    background: var(--light-dark);
 }
 .dark-theme.actived {
+  
    background: var(--theme-dark);
    
    main > header {
@@ -81,48 +82,166 @@ button {
    main header  {      
       border: 0;
    } 
-   main section li {
-      background: #1b1b1b;
-      border-color: var(--purple-800);
-      a {
-         color:var(--gray-50);
-      }
-      p, span {
-         color:var(--gray-100);
-      }
-      button {
-         background:var(--purple-800);
-         border-color: var(--purple-800);
+   main {
+      section {
+            
+            h2 {
+               color:var(--gray-100);
+            }
+
+            li {
+               background: #1b1b1b;
+               border-color: var(--gray-800);
+               
+               a {
+                  color:var(--gray-50);
+               }
+               
+               p, span {
+                  color:var(--gray-100);
+               }
+            
+               button {
+                  background:var(--purple-800);
+                  border-color: var(--purple-800);
+               }
+            }          
       }
    }
 
-   main section {        
-      h2 {
-         color:var(--gray-100);
-      }
-   }
-   main table td {
-      border-color: var(--gray-800);
-   }
-   main table,
-   main table a{      
-      color:var(--gray-50);      
-   }
-   main table button {
-      background:var(--purple-800);
-      border-color: var(--purple-800);
+   .wrap_homepage {
+      background: var(--theme-dark);
    }
 
    /* play sidebar  */
-   aside.painel-control > div {
+   aside.control-painel > div {
       background-color: #1b1b1b;
       background:linear-gradient(53deg,  #1b1b1b 60%, #000000 10%)     
    }
   
 }
-
-   
-
 /*end dark mode*/
 
+
+/* Sidebar Control Play */
+.control-painel  {
+  position: relative;  
+  transition: 0.3s;
+}
+
+.slide-button {
+   display: none;
+}
+
+@media(max-width: 800px) {
+
+   @media only screen and (orientation:landscape){
+      body {   
+        transform: rotate(90deg);    
+      }
+    }
+   .control-painel  {         
+      position: absolute;  
+      left: -100%;     
+      top: 7rem;
+      width: 100%;
+
+      &.actived  {            
+         left: 0;  
+      }
+      
+      .slide-button {
+         display: block;
+         position: absolute;
+         right: -1.5rem;
+         top: 45%;      
+         background-color:transparent;
+            
+         button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 3rem;
+            width: 3rem;
+            font-size: 2rem;
+            color: var(--gray-500);                 
+            border:2px solid var(--purple-500);         
+            border-radius: 50%;
+            transition: 0.5s;
+         }
+
+         &.active {
+         
+            button {
+               color: var(--green-500);
+               transform: rotate(180deg);               
+            }
+         }      
+      } 
+   }
+}
+
+/* mobile screen */
+
+@media(max-width: 768px) {
+   .control-painel {
+      left: -48%;      
+   }
+}
+
+@media(max-width: 540px) {
+   .control-painel {
+      left: -68%;      
+   }
+}
+
+@media(max-width: 420px) {
+   .control-painel {
+      left: -88%;
+   }
+}
+@media(max-width: 400px) {
+   .control-painel {
+      left: -94%;
+   }
+}
+@media(max-width: 375px) {
+   .control-painel {
+      left: -100%;
+   }
+}
+
+@media(max-width: 350px) {   
+   .control-painel  {              
+      left: -105%;           
+   }
+}
+
+@media(max-width: 345px) {   
+   .control-painel  {              
+      left: -110%;           
+   }
+}
+
+@media(max-width: 330px) {   
+   .control-painel  {              
+      left: -110%;           
+   }
+}
+@media(max-width: 320px) {   
+   .control-painel  {              
+      left: -115%;           
+   }
+}
+@media(max-width: 300px) {   
+   .control-painel  {              
+      left: -120%;           
+   }
+}
+@media(max-width: 280px) {   
+   .control-painel  {              
+      left: -133%;           
+   }
+}
 
