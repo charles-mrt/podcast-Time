@@ -8,7 +8,7 @@
  - ReactJs, Next.Js, TypeScript, Css.
 
 <p align="center">
-  <a href="https://podcast-time.vercel.app/" target="_blank"><img src="https://i.ibb.co/h7Q7TqY/podcaster.jpg" alt="Home-custom" border="0"></a>
+  <a href="https://podcast-time.vercel.app/" target="_blank"><img src="https://i.ibb.co/FWjz0pz/projeto-podcast-Time.png" alt="Home-custom" border="0"></a>
 </p>
 <h1>Demonstração:  <a href="https://podcast-time.vercel.app/" target="_blank">Ir para Podcastr</a></h1>
 
